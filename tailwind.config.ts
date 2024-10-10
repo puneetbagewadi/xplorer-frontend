@@ -14,11 +14,26 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px"
+        "2xl": "1536px"
       }
     },
     extend: {
+      backgroundImage: {
+        primaryGradient:
+          "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)"
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        m_plus_2: ["var(--font-m_plus_2)"]
+      },
       colors: {
+        "body-ash": "#f4f7f9",
+        "button-cta": "#1c1515",
+        "grey-200": "#e2e8f0",
+        "grey-800": "#32353b",
+        "grey-300": "#cbd5e1",
+        "grey-500": "#64748b",
+        "grey-50-10": "rgba(249, 250, 251, .1)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

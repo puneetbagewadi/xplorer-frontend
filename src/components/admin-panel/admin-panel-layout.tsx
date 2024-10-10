@@ -5,6 +5,7 @@ import { useStore } from "@/hooks/use-store";
 import { Footer } from "@/components/admin-panel/footer";
 import { Sidebar } from "@/components/admin-panel/sidebar";
 import { useSidebarToggle } from "@/hooks/use-sidebar-toggle";
+import { ContentLayout } from "./content-layout";
 
 export default function AdminPanelLayout({
   children
@@ -20,11 +21,11 @@ export default function AdminPanelLayout({
       <Sidebar />
       <main
         className={cn(
-          "min-h-[calc(100vh_-_56px)] bg-zinc-50 dark:bg-zinc-900 transition-[margin-left] ease-in-out duration-300",
+          "min-h-[calc(100vh_-_56px)] transition-[margin-left] ease-in-out duration-300",
           sidebar?.isOpen === false ? "lg:ml-[90px]" : "lg:ml-72"
         )}
       >
-        {children}
+        <ContentLayout title="Manta Pacific Xplorer"> {children}</ContentLayout>
       </main>
       <footer
         className={cn(
