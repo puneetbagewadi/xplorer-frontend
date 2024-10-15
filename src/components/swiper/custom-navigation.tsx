@@ -6,7 +6,7 @@ export const SlideNextButton = () => {
   return (
     <button className="swiper-button-front">
       <Image
-        src="/assets/icons/chevron-right.svg"
+        src="/assets/icons/chevronRight.svg"
         alt="next"
         width={30}
         height={30}
@@ -20,7 +20,7 @@ export const SlidePrevButton = () => {
   return (
     <button className="swiper-button-back">
       <Image
-        src="/assets/icons/chevron-right.svg"
+        src="/assets/icons/chevronRight.svg"
         alt="next"
         width={30}
         height={30}

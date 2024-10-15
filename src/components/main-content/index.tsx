@@ -154,6 +154,27 @@ const index = () => {
 
         {/* ----------- */}
 
+        <div className="bg-secondary-200 relative w-full rounded-2xl px-6 py-2 md:p-6 h-full !p-6 bg-white">
+          <div className="relative mb-4 flex items-center justify-between">
+            <p className="text-xs text-text-500">Total transactions on chain</p>
+            <div className="absolute right-0">
+              <Image
+                alt="more options"
+                width={24}
+                height={24}
+                src="/assets/icons/chevronRight.svg"
+              />
+            </div>
+          </div>
+          <p className="font-bold text-2xl text-grey-800 ">67,905,888</p>
+          <div className="h-24"></div>
+          <p className="text-sm mt-4 text-text-500">
+            On average 8.31 Transactions are processed every second
+          </p>
+        </div>
+
+        {/* ----------- */}
+
         <div className="bg-white relative w-full rounded-2xl px-6 md:p-6 py-6 pb-2 shadow-down md:pb-0 h-40 overflow-hidden">
           <div className="mb-1 flex items-center gap-0.5 md:mb-5">
             <Image
@@ -170,6 +191,434 @@ const index = () => {
           <div className="absolute top-3 right-3">
             <SlidePrevButton />
             <SlideNextButton />
+          </div>
+        </div>
+
+        {/* ----------- */}
+        <div className="flex gap-2 flex-col sm:flex-row">
+          <div
+            className="relative w-full rounded-2xl px-6 md:p-6 h-full bg-primaryGradient py-6 shadow-down"
+            role="presentation"
+          >
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-slate-300">Ongoing transactions</p>
+              <Image
+                alt="more options"
+                width="24"
+                height="24"
+                src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/chevron_right_grey.svg"
+              />
+            </div>
+            <div className="flex justify-between">
+              <div className="pt-4">
+                <Image
+                  alt="right-top icon"
+                  width="54"
+                  height="54"
+                  className="mb-4"
+                  src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/chains/manta/ongoing_tx_icon.svg"
+                />
+                <div className="flex w-full items-center gap-2 text-center">
+                  <p className="text-center font-bold mb-2 text-white hover:underline">
+                    0x0d4...fa9f
+                  </p>
+                  <Image
+                    alt="copy"
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    data-nimg="1"
+                    className="cursor-pointer "
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
+                  />
+                </div>
+                <div className="mb-3 flex items-center gap-x-1">
+                  <Image
+                    alt="subdirectory"
+                    width="16"
+                    height="16"
+                    decoding="async"
+                    data-nimg="1"
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/subdirectory_right.svg"
+                  />
+                  <p className="text-sm text-slate-300">a few seconds ago</p>
+                </div>
+                <div className="flex gap-x-1">
+                  <Image
+                    alt="gas pump"
+                    width="20"
+                    height="20"
+                    decoding="async"
+                    data-nimg="1"
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/gas_pump.svg"
+                  />
+                  <p className="text-sm text-slate-300">
+                    &lt;$0.01 (0.000000835 Gwei)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="relative w-full rounded-2xl px-6 md:p-6 h-full bg-primaryGradient py-6 shadow-down"
+            role="presentation"
+          >
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-slate-300">Latest block</p>
+              <Image
+                alt="more options"
+                width="24"
+                height="24"
+                decoding="async"
+                data-nimg="1"
+                src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/chevron_right_grey.svg"
+              />
+            </div>
+            <div className="flex justify-between">
+              <div className="pt-4">
+                <Image
+                  alt="right-top icon"
+                  width="54"
+                  height="54"
+                  className="mb-4"
+                  src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/chains/manta/latest_block_image.svg"
+                />
+                <div className="flex w-full items-center gap-2 text-center">
+                  <p className="text-center font-bold mb-2 text-white hover:underline">
+                    3466896
+                  </p>
+                  <Image
+                    alt="copy"
+                    width="12"
+                    height="12"
+                    decoding="async"
+                    data-nimg="1"
+                    className="cursor-pointer "
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
+                  />
+                </div>
+                <div className="mb-3 flex items-center gap-x-1">
+                  <Image
+                    alt="subdirectory"
+                    width="16"
+                    height="16"
+                    decoding="async"
+                    data-nimg="1"
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/subdirectory_right.svg"
+                  />
+                  <p className="text-sm text-slate-300">24 transactions</p>
+                </div>
+                <div className="flex gap-x-1">
+                  <Image
+                    alt="gas pump"
+                    width="20"
+                    height="20"
+                    decoding="async"
+                    data-nimg="1"
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/gas_pump.svg"
+                  />
+                  <p className="text-sm text-slate-300">$0.01 (6946.3 Gwei)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ----------- */}
+
+        <div
+          className="bg-secondary-200 relative w-full rounded-2xl px-6 md:p-6  h-full bg-white py-6"
+          role="presentation"
+        >
+          <div className="relative items-center md:flex">
+            <div className="mb-4 w-full border-b border-grey-200 pb-4 md:mb-0 md:w-[40%] md:border-none">
+              <div className="mb-4 flex items-center gap-1">
+                <p className="text-xs text-grey-500">
+                  Total contracts built on chain
+                </p>
+                <Image
+                  alt="help icon"
+                  width="16"
+                  height="16"
+                  className="cursor-pointer"
+                  src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/help_circle_light.svg"
+                />
+              </div>
+              <div className="flex items-center justify-between gap-2 md:flex-col md:items-start">
+                <div>
+                  <p className="font-bold text-2xl text-grey-800">206685</p>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div
+                    role="presentation"
+                    className="inline-flex w-fit items-center justify-center gap-x-1 rounded-lg px-2 py-1 bg-green-50 bg-transparent-green600"
+                  >
+                    <p className="text-xs capitalize text-green-600">+ 6</p>
+                  </div>
+                  <p className="text-xs text-text-500"> in last 24 hours</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute left-[33%] hidden h-full w-px bg-grey-200 md:block"></div>
+            <div className="relative w-full md:mb-0 md:w-[60%] md:pb-4">
+              <div className="flex items-center justify-between">
+                <div className="mb-4 flex items-center gap-1">
+                  <p className="text-xs text-grey-500">Verified</p>
+                  <Image
+                    alt="help icon"
+                    width="16"
+                    height="16"
+                    decoding="async"
+                    data-nimg="1"
+                    className="cursor-pointer"
+                    src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/help_circle_light.svg"
+                  />
+                </div>
+                <Image
+                  alt="latest block"
+                  width="24"
+                  height="24"
+                  src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/chevron_right_grey.svg"
+                />
+              </div>
+              <div className="flex items-center justify-between gap-2 md:flex-col md:items-start">
+                <p className="font-bold text-grey-800 text-2xl">4735</p>
+
+                <div className="flex items-center gap-1">
+                  <div
+                    role="presentation"
+                    className="inline-flex w-fit items-center justify-center gap-x-1 rounded-lg px-2 py-1 bg-green-50 bg-transparent-green600"
+                  >
+                    <p className="text-xs capitalize text-green-600  ">+ 4</p>
+                  </div>
+                  <p className="text-xs text-text-500"> in last 24 hours</p>
+                </div>
+              </div>
+              <div className="right-0 top-1/2 hidden h-[114px] w-[114px] -translate-y-1/2 md:absolute">
+                {/* <svg>
+                  <defs>
+                    <linearGradient id="" gradientTransform="rotate(90)">
+                      <stop offset="0" stop-color="#01AEE8"></stop>
+                      <stop offset="1" stop-color="#7270F7"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg> */}
+                <div data-test-id="CircularProgressbarWithChildren">
+                  <div className="relative w-full h-full">
+                    {/* <svg
+                      className="CircularProgressbar "
+                      viewBox="0 0 100 100"
+                      data-test-id="CircularProgressbar"
+                    >
+                      <path
+                        className="CircularProgressbar-trail"
+                        d="
+      M 50,50
+      m 0,-39
+      a 39,39 0 1 1 0,78
+      a 39,39 0 1 1 0,-78
+    "
+                        stroke-width="22"
+                        fill-opacity="0"
+                        style="stroke: rgb(226, 232, 240); stroke-dasharray: 245.044px, 245.044px; stroke-dashoffset: 0px;"
+                      ></path>
+                      <path
+                        className="CircularProgressbar-path"
+                        d="
+      M 50,50
+      m 0,-39
+      a 39,39 0 1 1 0,78
+      a 39,39 0 1 1 0,-78
+    "
+                        stroke-width="22"
+                        fill-opacity="0"
+                        style='stroke: url("#"); stroke-dasharray: 245.044px, 245.044px; stroke-dashoffset: 239.408px;'
+                      ></path>
+                    </svg> */}
+
+                    <strong className="gradientText font-bold ">2.3%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ----------- */}
+
+        <div className="flex gap-2 flex-col sm:flex-row">
+          <div
+            className="bg-secondary-200 relative w-full rounded-2xl p-6 md:p-6 h-full bg-primaryGradient shadow-down "
+            role="presentation"
+          >
+            <div className="flex items-center justify-between pb-4">
+              <p className="supportText_regular text-slate-300">
+                Total accounts
+              </p>
+              <Image
+                alt="more options"
+                width="24"
+                height="24"
+                decoding="async"
+                data-nimg="1"
+                src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/chevron_right_grey.svg"
+              />
+            </div>
+            <p className="heading2_bold text-white">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.9998 2.66667C8.77184 2.66667 2.6665 8.77201 2.6665 16C2.6665 23.228 8.77184 29.3333 15.9998 29.3333C23.2278 29.3333 29.3332 23.228 29.3332 16C29.3332 8.77201 23.2278 2.66667 15.9998 2.66667ZM15.9998 9.33334C18.3025 9.33334 19.9998 11.0293 19.9998 13.3333C19.9998 15.6373 18.3025 17.3333 15.9998 17.3333C13.6985 17.3333 11.9998 15.6373 11.9998 13.3333C11.9998 11.0293 13.6985 9.33334 15.9998 9.33334ZM9.19184 22.3627C10.3878 20.6027 12.3825 19.4293 14.6665 19.4293H17.3332C19.6185 19.4293 21.6118 20.6027 22.8078 22.3627C21.1038 24.1867 18.6865 25.3333 15.9998 25.3333C13.3132 25.3333 10.8958 24.1867 9.19184 22.3627Z"
+                  fill="url(#paint0_linear_3363_52887)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_3363_52887"
+                    x1="4.57126"
+                    y1="2.44224"
+                    x2="29.7799"
+                    y2="27.6824"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#01AEE8"></stop>
+                    <stop offset="1" stop-color="#7270F7"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span className="heading2_bold inline-block pt-2 text-white">
+                1.67M{" "}
+              </span>
+            </p>
+            <p className="paragraph2_regular pb-8 text-white md:pb-4">
+              interacted on chain today
+            </p>
+            <div className="absolute bottom-6 flex items-center gap-[6px]">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M7.5 16.6667H12.5V18.3333H7.5V16.6667ZM14.0883 11.4267C14.9467 10.4217 15.8333 9.38249 15.8333 7.49999C15.8333 4.28416 13.2158 1.66666 10 1.66666C6.78416 1.66666 4.16666 4.28416 4.16666 7.49999C4.16666 9.40416 5.05583 10.44 5.9175 11.4417C6.21583 11.79 6.525 12.1508 6.82083 12.5658C6.94083 12.7375 7.1375 13.3958 7.31333 14.1667H6.65333V15.8333H13.3467V14.1667H12.6883C12.8658 13.3942 13.0633 12.7342 13.1825 12.5625C13.4758 12.1433 13.7875 11.7792 14.0883 11.4267Z"
+                  fill="#01AEE8"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1545_755"
+                    x1="5"
+                    y1="1.52639"
+                    x2="19.8101"
+                    y2="11.9064"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#01AEE8"></stop>
+                    <stop offset="1" stop-color="#7270F7"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <p className="supportText_regular text-slate-500">
+                That’s almost a small town
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="relative w-full rounded-2xl p-6 md:p-6 h-full bg-white shadow-down"
+            role="presentation"
+          >
+            <div className="flex items-center justify-between pb-4">
+              <p className="supportText_regular text-slate-500">
+                Most valued accounts
+              </p>
+              <Image
+                alt="more options"
+                width="24"
+                height="24"
+                decoding="async"
+                data-nimg="1"
+                src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/chevron_right_grey.svg"
+              />
+            </div>
+            <div className="pb-5 ">
+              <div className="flex items-center justify-start gap-x-4">
+                <p className="heading2_bold text-slate-300">#1</p>
+                <div>
+                  <div className="flex w-full items-center gap-2 text-center">
+                    <a href="/address/0xF977814e90dA44bFA03b6295A0616a897441aceC">
+                      <p className="text-center paragraph2_bold  text-slate-800 hover:underline">
+                        0xF977...41aceC
+                      </p>
+                    </a>
+                    <Image
+                      alt="copy"
+                      width="12"
+                      height="12"
+                      decoding="async"
+                      data-nimg="1"
+                      className="cursor-pointer "
+                      src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
+                    />
+                  </div>
+                  <p className="supportText_regular text-slate-500">
+                    29,357.93 ETH
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="pb-5 ">
+              <div className="flex items-center justify-start gap-x-4">
+                <p className="heading2_bold text-slate-300">#2</p>
+                <div>
+                  <div className="flex w-full items-center gap-2 text-center">
+                    <a href="/address/0xC882b111A75C0c657fC507C04FbFcD2cC984F071">
+                      <p className="text-center paragraph2_bold  text-slate-800 hover:underline">
+                        0xC882...84F071
+                      </p>
+                    </a>
+                    <Image
+                      alt="copy"
+                      width="12"
+                      height="12"
+                      decoding="async"
+                      data-nimg="1"
+                      className="cursor-pointer "
+                      src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
+                    />
+                  </div>
+                  <p className="supportText_regular text-slate-500">
+                    4,518.19 ETH
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="pb-5 ">
+              <div className="flex items-center justify-start gap-x-4">
+                <p className="heading2_bold text-slate-300">#3</p>
+                <div>
+                  <div className="flex w-full items-center gap-2 text-center">
+                    <a href="/address/0x0D0707963952f2fBA59dD06f2b425ace40b492Fe">
+                      <p className="text-center paragraph2_bold  text-slate-800 hover:underline">
+                        0x0D07...b492Fe
+                      </p>
+                    </a>
+                    <Image
+                      alt="copy"
+                      width="12"
+                      height="12"
+                      decoding="async"
+                      data-nimg="1"
+                      className="cursor-pointer "
+                      src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
+                    />
+                  </div>
+                  <p className="supportText_regular text-slate-500">
+                    472.8 ETH
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
