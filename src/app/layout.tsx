@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { M_PLUS_2 } from "next/font/google";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { ThemeProvider } from "@/providers/ThemeProvider";
 import { Web3Provider } from "@/providers/Web3Provider";
 import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
+import { StoreProvider } from "@/providers/StoreProvider";
 
 const m_plus_2 = M_PLUS_2({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   ),
   title: "xplorer",
   description:
-    "A stunning and functional retractable sidebar for Next.js built on top of shadcn/ui complete with desktop and mobile responsiveness.",
+    "Partisia Blockchain allows users to compute all kinds of data while maintaining complete data privacy at rest, in transit, and in use.",
   alternates: {
     canonical: "/"
   },
@@ -29,14 +30,14 @@ export const metadata: Metadata = {
     url: "/",
     title: "xplorer",
     description:
-      "A stunning and functional retractable sidebar for Next.js built on top of shadcn/ui complete with desktop and mobile responsiveness.",
+      "Partisia Blockchain allows users to compute all kinds of data while maintaining complete data privacy at rest, in transit, and in use.",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "xplorer",
     description:
-      "A stunning and functional retractable sidebar for Next.js built on top of shadcn/ui complete with desktop and mobile responsiveness."
+      "Partisia Blockchain allows users to compute all kinds of data while maintaining complete data privacy at rest, in transit, and in use."
   }
 };
 
@@ -48,11 +49,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${m_plus_2.className} bg-body-ash`}>
-        <Web3Provider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <AdminPanelLayout>{children}</AdminPanelLayout>
-          </ThemeProvider>
-        </Web3Provider>
+        <StoreProvider>
+          <Web3Provider>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+              <AdminPanelLayout>{children}</AdminPanelLayout>
+            </ThemeProvider>
+          </Web3Provider>
+        </StoreProvider>
       </body>
     </html>
   );
