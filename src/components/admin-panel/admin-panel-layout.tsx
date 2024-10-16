@@ -25,7 +25,7 @@ export default function AdminPanelLayout({
           sidebar?.isOpen === false ? "lg:ml-[90px]" : "lg:ml-72"
         )}
       >
-        <ContentLayout title="Manta Pacific Xplorer"> {children}</ContentLayout>
+        <ContentLayout title="Partisia Xplorer"> {children}</ContentLayout>
       </main>
       <footer
         className={cn(

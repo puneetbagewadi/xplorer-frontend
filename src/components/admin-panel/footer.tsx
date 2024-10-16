@@ -19,8 +19,8 @@ export function Footer() {
           />
 
           <p className="text-gray-400 w-2/3 mt-8 text-sm">
-            Manta Pacific is the first EVM-equivalent ZK-application platform
-            that is scalable and secure through Celestia DA and Polygon zkEVM.
+            Partisia is the first EVM-equivalent ZK-application platform that is
+            scalable and secure through Celestia DA and Polygon zkEVM.
           </p>
 
           <div className="flex mt-4 space-x-4">

@@ -32,8 +32,14 @@ const config = {
         "grey-200": "#e2e8f0",
         "grey-800": "#32353b",
         "grey-300": "#cbd5e1",
-        "grey-500": "#64748b",
+        "grey-500": "#6f7b8b",
         "grey-50-10": "rgba(249, 250, 251, .1)",
+        "transparent-blue": "#087ac733",
+        "transparent-yellow500": "#ca8a0433",
+        "success-600": "#16a34a",
+        "text-800": "#1e293b",
+        "text-500": "#64748b",
+        "link-500": "#0ea5e9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -75,20 +81,36 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" }
+          from: {
+            height: "0"
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)"
+          }
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" }
+          from: {
+            height: "var(--radix-accordion-content-height)"
+          },
+          to: {
+            height: "0"
+          }
         },
         "collapsible-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-collapsible-content-height)" }
+          from: {
+            height: "0"
+          },
+          to: {
+            height: "var(--radix-collapsible-content-height)"
+          }
         },
         "collapsible-up": {
-          from: { height: "var(--radix-collapsible-content-height)" },
-          to: { height: "0" }
+          from: {
+            height: "var(--radix-collapsible-content-height)"
+          },
+          to: {
+            height: "0"
+          }
         }
       },
       animation: {
