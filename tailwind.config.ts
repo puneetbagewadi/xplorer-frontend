@@ -40,6 +40,7 @@ const config = {
         "text-800": "#1e293b",
         "text-500": "#64748b",
         "link-500": "#0ea5e9",
+        "active-border": "#01aee8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
