@@ -51,9 +51,9 @@ export default function RootLayout({
       <body className={`${m_plus_2.className} bg-body-ash`}>
         <StoreProvider>
           <Web3Provider>
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
               <AdminPanelLayout>{children}</AdminPanelLayout>
-            </ThemeProvider>
+            {/* </ThemeProvider> */}
           </Web3Provider>
         </StoreProvider>
       </body>
