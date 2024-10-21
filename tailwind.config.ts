@@ -42,6 +42,7 @@ const config = {
         "link-500": "#0ea5e9",
         "sky-blue":"#01aee8",
         "success-50":"#f0fdf4",
+        "active-border": "#01aee8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,6 +1,7 @@
 import { SheetMenu } from "@/components/admin-panel/sheet-menu";
 import { ConnectKitButton } from "connectkit";
 import NetworkSelector from "../network-selector";
+import ConnectWalletButton from "../ConnectWallet";
 
 interface NavbarProps {
   title: string;
@@ -18,7 +19,7 @@ export function Navbar({ title }: NavbarProps) {
         <div className="flex flex-1 items-center justify-end">
           {/* <ModeToggle />
           <UserNav /> */}
-          <ConnectKitButton.Custom>
+          {/* <ConnectKitButton.Custom>
             {({
               isConnected,
               isConnecting,
@@ -37,7 +38,8 @@ export function Navbar({ title }: NavbarProps) {
                 </button>
               );
             }}
-          </ConnectKitButton.Custom>
+          </ConnectKitButton.Custom> */}
+          <ConnectWalletButton />
         </div>
       </div>
     </header>

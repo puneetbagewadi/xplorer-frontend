@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Copy from "@/assets/icons/copy.svg";
 import Image from "next/image";
 import HoldersTransfersTab from "./HoldersTransfersTab";
+import CopyToClipboard from "@/lib/helpers/CopyToClipboard";
 
 const TokenPage = () => {
   return (
@@ -47,19 +48,10 @@ const TokenPage = () => {
                     <div className="mb-2.5 mr-[25%]   pb-5"></div>
                     <p className="text-sm mb-1 text-grey-500">Contract:</p>
                     <div className="flex items-center gap-2">
-                      <p className="font-semibold text-white text-xs">
-                        0x0Dc...1746
+                      <p className="font-semibold text-white text-xs gap-2">
+                        <span className="mr-2">0x0Dc...1746</span>
+                        <CopyToClipboard copyText={"address"} />
                       </p>
-                      <img
-                        alt="copy"
-                        loading="lazy"
-                        width="12"
-                        height="12"
-                        decoding="async"
-                        data-nimg="1"
-                        className="cursor-pointer "
-                        src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
-                      />
                     </div>
                   </div>
                   <div className="absolute right-0 top-10 block pr-6 md:hidden">
@@ -222,9 +214,16 @@ const TokenPage = () => {
                       <p className="font-bold pb-1 text-grey-800">
                         Excursionist #42333
                       </p>
-                      <p className="text-center text-xs break-words text-grey-500 hover:underline flex gap-2">
-                        0x63D...006D
-                        <Copy />
+                      <p className="text-center text-xs break-words text-grey-500 flex gap-2">
+                        <span className="hover:underline cursor-pointer">
+                          {" "}
+                          0x63D...007D
+                        </span>
+                        <CopyToClipboard
+                          copyText={
+                            "0x63D83FBAE0EE891328ba7130A1920a46fe54007D"
+                          }
+                        />
                       </p>
                     </div>
                   </div>
@@ -260,9 +259,16 @@ const TokenPage = () => {
                       <p className="font-bold pb-1 text-grey-800">
                         Discoverer #16950
                       </p>
-                      <p className="text-center text-xs break-words text-grey-500 hover:underline flex gap-2">
-                        0x63D...006D
-                        <Copy />
+                      <p className="text-center text-xs break-words text-grey-500 flex gap-2">
+                        <span className="hover:underline cursor-pointer">
+                          {" "}
+                          0x63D...008D
+                        </span>
+                        <CopyToClipboard
+                          copyText={
+                            "0x63D83FBAE0EE891328ba7130A1920a46fe54008D"
+                          }
+                        />
                       </p>
                     </div>
                   </div>
@@ -296,9 +302,16 @@ const TokenPage = () => {
                       <p className="font-bold pb-1 text-grey-800">
                         Itinerant #30658
                       </p>
-                      <p className="text-center text-xs break-words text-grey-500 hover:underline flex gap-2">
-                        0x63D...006D
-                        <Copy />
+                      <p className="text-center text-xs break-words text-grey-500 flex gap-2">
+                        <span className="hover:underline cursor-pointer">
+                          {" "}
+                          0x63D...009D
+                        </span>
+                        <CopyToClipboard
+                          copyText={
+                            "0x63D83FBAE0EE891328ba7130A1920a46fe54009D"
+                          }
+                        />
                       </p>
                     </div>
                   </div>
@@ -321,7 +334,7 @@ const TokenPage = () => {
         </div>
       </div>
       <div className="col-span-1 row-span-3 md:col-span-8 md:row-start-2">
-        <HoldersTransfersTab />
+        <HoldersTransfersTab tabNames={["transfers", "holders", "contract"]} />
       </div>
     </div>
   );

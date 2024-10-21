@@ -4,22 +4,34 @@ import TransferRow from "./TransferRow";
 import HolderRow from "./HolderRow";
 import ContractRow from "./ContractRow";
 
-const HoldersTab = () => {
+interface TabNames {
+  tabNames: string[];
+}
+
+const HoldersTransfersTab = ({ tabNames }: TabNames) => {
   return (
     <>
-      <Tabs defaultValue="transfers" className="w-full ">
-        <TabsList className="border-b !bg-transparent border-gray-300 !rounded-none w-full !justify-start">
-          <TabsTrigger value="transfers">Transfers</TabsTrigger>
-          <TabsTrigger value="holders">Holders</TabsTrigger>
-          <TabsTrigger value="contract">Contract</TabsTrigger>
+      <Tabs defaultValue={tabNames[0]} className="relative mr-auto w-full">
+        <TabsList className="w-full justify-start rounded-none border-b bg-transparent p-0 text-sm">
+          {tabNames.map((tab) => {
+            return (
+              <TabsTrigger
+                key={tab}
+                value={tab}
+                className="capitalize font-normal relative rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-2 pt-2 text-muted-foreground shadow-none transition-none focus-visible:ring-0 data-[state=active]:border-b-active-border data-[state=active]:text-foreground data-[state=active]:shadow-none data-[state=active]:bg-transparent data-[state=active]:font-bold data-[state=active]:text-[1rem]"
+              >
+                {tab}
+              </TabsTrigger>
+            );
+          })}
         </TabsList>
-        <TabsContent value="transfers">
+        <TabsContent value={tabNames[0]}>
           <TransferRow />
         </TabsContent>
-        <TabsContent value="holders">
+        <TabsContent value={tabNames[1]}>
           <HolderRow />
         </TabsContent>
-        <TabsContent value="contract">
+        <TabsContent value={tabNames[2]}>
           <ContractRow />
         </TabsContent>
       </Tabs>
@@ -27,4 +39,4 @@ const HoldersTab = () => {
   );
 };
 
-export default HoldersTab;
+export default HoldersTransfersTab;

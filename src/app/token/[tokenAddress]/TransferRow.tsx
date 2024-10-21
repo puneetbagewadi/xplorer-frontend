@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 const TransferRow = () => {
   return (
     <>
-      <div className="relative mt-2 rounded-2xl shadow-sm">
+      <div className="relative rounded-2xl shadow-sm my-6">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <SearchIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
         </div>
@@ -21,7 +21,7 @@ const TransferRow = () => {
           name="search"
           type="text"
           placeholder="Search for address, transaction, token etc..."
-          className="block w-full !shadow-none !rounded-2xl !h-auto !border-1 !border-grey-300 p-3 mb-5 pl-10 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6 bg-white"
+          className="block w-full !shadow-none !rounded-2xl !h-auto !border-1 !border-grey-300 p-3 pl-10 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6 bg-white"
         />
       </div>
       <Accordion type="single" collapsible className="bg-white rounded-2xl">
