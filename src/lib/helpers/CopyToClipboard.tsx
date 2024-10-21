@@ -2,6 +2,7 @@ import useClipboard from "@/hooks/use-copyToClipboard";
 import Copy from "@/assets/icons/copy.svg";
 import React from "react";
 import { cn } from "../utils";
+import { Badge } from "@/components/ui/badge";
 
 const CopyToClipboard = ({
   copyText,
@@ -18,11 +19,16 @@ const CopyToClipboard = ({
       disabled={isCopied}
       className={cn(
         isCopied ? "text-success-600" : "",
-        "hover:no-underline",
+        "hover:no-underline relative",
         className
       )}
     >
-      {isCopied ? "Copied!" : <Copy />}
+      <Copy className="w-4 h-4" />
+      {isCopied && (
+        <div className=" absolute left-[-15px] top-[-30px]">
+          <Badge variant={"secondary"}>Copied!</Badge>
+        </div>
+      )}
     </button>
   );
 };

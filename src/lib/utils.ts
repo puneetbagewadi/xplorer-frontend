@@ -19,13 +19,3 @@ export function shortenAddress(address: string, chars = 4) {
     return "";
   }
 }
-export function shortenAddress(address: string, chars = 4) {
-  try {
-    const parsed = address
-    const addrlength = address.length
-    return `${parsed.substring(0, chars)}...${parsed.substring(Math.abs(addrlength - chars))}`
-  } catch (error) {
-    console.log(error)
-    throw Error(`Invalid 'address' parameter '${address}'.`)
-  }
-}

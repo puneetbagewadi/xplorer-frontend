@@ -15,7 +15,8 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
         outline: "text-foreground",
-        success:"inline-flex w-fit items-center text-success-600 border-0 font-normal justify-center gap-x-1 rounded-lg px-2 py-1 bg-success-50 mb-0.5"
+        success:"inline-flex w-fit items-center text-success-600 border-0 font-normal justify-center gap-x-1 rounded-lg px-2 py-1 bg-success-50 mb-0.5",
+        lightOrange:"inline-flex w-fit items-center text-[#de9804] border-0 font-normal justify-center gap-x-1 rounded-lg px-2 py-1 bg-[#fcf6ea] mb-0.5"
       },
     },
     defaultVariants: {
