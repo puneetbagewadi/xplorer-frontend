@@ -82,7 +82,7 @@ const data: DepositTransactionTypes[] = [
     L2TxnHash:
       "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
     L1TxnHash:
-      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+      "0xbe06a9d9b03e0eaa4aaedc7eeac939ffe1f07faf90f211729d5ea3aceb36a79f",
     L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
     gasLimit: 490798,
     time: "41m ago"
@@ -91,9 +91,9 @@ const data: DepositTransactionTypes[] = [
     id: 4,
     L1Block: 21014298,
     L2TxnHash:
-      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+      "0x2893d829dfa11fa8dc4e612b3c3a2c4ed14065d1ce82aaa3fc5418a474abaf9a",
     L1TxnHash:
-      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+      "0xe8f129d826011bc6242a57c98b3b3c757be0143f0840f6ae889d8cfa6dc9d7e8",
     L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
     gasLimit: 490798,
     time: "41m ago"
@@ -113,7 +113,7 @@ const data: DepositTransactionTypes[] = [
     id: 6,
     L1Block: 21014298,
     L2TxnHash:
-      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+      "0x2150512c6ae92d3d9cec5b1259ce07b42cbcac076896a4b632d12898ea3cd96a",
     L1TxnHash:
       "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
     L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
@@ -144,7 +144,118 @@ const data: DepositTransactionTypes[] = [
   },
   {
     id: 8,
-    L1Block: 21014298,
+    L1Block: 21014298345345,
+    L2TxnHash:
+      "0xeeaef76aa7c5d15d09f6cff9cffdfa33ced54406d36d7da894bfddf398a3162b",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+
+  {
+    id: 10,
+    L1Block: 210142982353453,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 11,
+    L1Block: 21012918645645,
+    L2TxnHash:
+      "0x1b2925710c5c3784610151d2506e2463a21ec27c6526e4f134a65804d33105fc",
+    L1TxnHash:
+      "0xc9f43aed8dac631f45bfed4f54929470895cd939356811d2802445700fd1c768",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "5h ago"
+  },
+  {
+    id: 12,
+    L1Block: 210142983453,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 13,
+    L1Block: 210142983453,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 14,
+    L1Block: 21014298154,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 15,
+    L1Block: 2101429815,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 162,
+    L1Block: 21014298162,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 16,
+    L1Block: 2101429816,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 17,
+    L1Block: 2101429817,
+    L2TxnHash:
+      "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
+    L1TxnHash:
+      "0x115fd8db1db578345a673f01e7d5aaff7f2cf4e0f82033bb13a4ee5e59810924",
+    L1TxnHashOrigin: "0x746ca609680c55c3bdd0b3627b4c5db21b13d421",
+    gasLimit: 490798,
+    time: "41m ago"
+  },
+  {
+    id: 18,
+    L1Block: 2101429818,
     L2TxnHash:
       "0xf980cb1aa5086bf31a53230379de895e674fd9ff1fff34865a7b0a8bd0dc8940",
     L1TxnHash:
@@ -160,25 +271,37 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     accessorKey: "L1Block",
     header: () => <div className="">L1 Block</div>,
     cell: ({ row }) => (
-      <div className="capitalize ">
-        <Badge>
-          <Link
-            href={`/block/${row.getValue("L1Block")}`}
-            className="text-center items-center  text-xs  hover:underline flex gap-2"
-          >
-            <BlockImage />
+      <>
+        <div className="col-span-12 grid grid-cols-txsMobTable text-left lg:col-span-2 lg:block">
+          <p className="paragraph2_regular text-grey-600 lg:hidden">L1 Block</p>
 
-            <span> {row.getValue("L1Block")}</span>
-          </Link>
-        </Badge>
-      </div>
+          <div>
+            <Badge>
+              <Link
+                href={`/block/${row.getValue("L1Block")}`}
+                className="text-center items-center  text-xs  hover:underline flex gap-2"
+              >
+                <BlockImage />
+
+                <span className="supportText_regular capitalize text-white  hover:underline">
+                  {" "}
+                  {row.getValue("L1Block")}
+                </span>
+              </Link>
+            </Badge>
+          </div>
+        </div>
+      </>
     )
   },
   {
     accessorKey: "L2TxnHash",
     header: () => <div className="">L2 Txn Hash </div>,
     cell: ({ row }) => (
-      <div className="capitalize">
+      <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
+        <p className="paragraph2_regular text-grey-600 lg:hidden">
+          L2 Txn Hash
+        </p>
         <div className="flex justify-between items-center gap-4">
           <div className="flex gap-1.5">
             <Image
@@ -195,8 +318,6 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
             </Link>
             <CopyToClipboard copyText={row.getValue("L2TxnHash")} />
           </div>
-
-          <ArrowRight />
         </div>
       </div>
     )
@@ -205,7 +326,10 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     accessorKey: "L1TxnHash",
     header: () => <div className="">L1 Txn Hash</div>,
     cell: ({ row }) => (
-      <div className="capitalize ">
+      <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
+        <p className="paragraph2_regular text-grey-600 lg:hidden">
+          L1 Txn Hash
+        </p>{" "}
         <div className="flex gap-1.5">
           <Image
             src="/assets/icons/eth.svg"
@@ -228,7 +352,10 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     accessorKey: "L1TxnHashOrigin",
     header: () => <div className="">L1 Txn origin</div>,
     cell: ({ row }) => (
-      <div className="capitalize ">
+      <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
+        <p className="paragraph2_regular text-grey-600 lg:hidden">
+          L1 Txn Hash
+        </p>{" "}
         <div className="flex gap-1.5 items-center">
           <Image
             src="/assets/icons/eth.svg"
@@ -260,7 +387,10 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     accessorKey: "gasLimit",
     header: () => <div className="">gasLimit</div>,
     cell: ({ row }) => (
-      <div className="capitalize flex flex-col gap-1">
+      <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
+        <p className="paragraph2_regular text-grey-600 lg:hidden">
+          L1 Txn Hash
+        </p>{" "}
         <p className="text-xs text-grey-500">{row.getValue("gasLimit")}</p>
       </div>
     )
@@ -269,7 +399,10 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     accessorKey: "time",
     header: () => <div className=" capitalize text-right">time</div>,
     cell: ({ row }) => (
-      <div className="capitalize flex flex-col gap-1 justify-end items-end">
+      <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
+        <p className="paragraph2_regular text-grey-600 lg:hidden">
+          L1 Txn Hash
+        </p>{" "}
         {row.getValue("time")}
       </div>
     )
@@ -323,12 +456,6 @@ export function DepositTxn() {
 
   return (
     <div className="w-full flex space-y-6 flex-col ">
-      {/* <SearchTableColumns 
-        data={data}
-        onSearch={setFilteredData}
-        searchColumns={['address', 'initiatedBy', 'interactedWith']} 
-      /> */}
-
       <div className="w-[75%] lg:w-[40%] ">
         <div className="relative cursor-pointer">
           <input
@@ -350,65 +477,50 @@ export function DepositTxn() {
       <div className=" space-y-4">
         <TablePagination tableData={table} />
 
-        <div className=" border rounded-3xl bg-white flex flex-col">
-          <Table className="">
-            <TableHeader className=" ">
-              {table.getHeaderGroups().map((headerGroup) => (
-                <TableRow
-                  className=" border-b border-grey-200 "
-                  key={headerGroup.id}
+        <div className="bg-secondary-200 relative w-full rounded-2xl px-6 py-2 md:p-6 mt-4 rounded-4xl border border-grey-200 bg-white !p-0">
+          <div className="hidden grid-cols-auto gap-5 border-b border-grey-200 px-6 py-4 lg:grid">
+            {table.getHeaderGroups().map((headerGroup) =>
+              headerGroup.headers.map((header) => (
+                <div
+                  key={header.id}
+                  className="col-span-2 paragraph2_regular text-text-800"
                 >
-                  {headerGroup.headers.map((header) => {
-                    return (
-                      <TableHead
-                        className="items-center !h-10 gap-5  !px-6 !py-4 "
-                        key={header.id}
-                      >
-                        {header.isPlaceholder
-                          ? null
-                          : flexRender(
-                              header.column.columnDef.header,
-                              header.getContext()
-                            )}
-                      </TableHead>
-                    );
-                  })}
-                </TableRow>
-              ))}
-            </TableHeader>
-            <TableBody>
-              {table.getRowModel().rows?.length ? (
-                table.getRowModel().rows.map((row) => (
-                  <TableRow
-                    key={row.id}
-                    data-state={row.getIsSelected() && "selected"}
-                  >
-                    {row.getVisibleCells().map((cell) => (
-                      <TableCell
-                        key={cell.id}
-                        className="items-center gap-5 px-6 py-5 text-gray-800"
-                      >
-                        {flexRender(
-                          cell.column.columnDef.cell,
-                          cell.getContext()
-                        )}
-                      </TableCell>
-                    ))}
-                  </TableRow>
-                ))
-              ) : (
-                <TableRow>
-                  <TableCell
-                    colSpan={columns.length}
-                    className="h-24 text-center"
-                  >
-                    No results.
-                  </TableCell>
-                </TableRow>
-              )}
-            </TableBody>
-          </Table>
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
+                </div>
+              ))
+            )}
+          </div>
+
+          {/* <div className="grid grid-cols-12 gap-4"> */}
+
+          {table.getRowModel().rows?.length ? (
+            table.getRowModel().rows.map((row) => (
+              <div
+                key={row.id}
+                className="border-b border-gray-200 last:border-b-0"
+              >
+                <div className="grid grid-cols-auto items-center gap-6 px-6 py-5 ">
+                  {row.getVisibleCells().map((cell) => (
+                    <>
+                      {flexRender(
+                        cell.column.columnDef.cell,
+                        cell.getContext()
+                      )}
+                    </>
+                  ))}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className="col-span-12 text-center p-4">No results.</div>
+          )}
         </div>
+
         <TablePagination tableData={table} />
       </div>
     </div>
