@@ -44,6 +44,8 @@ const config = {
         "text-500": "#64748b",
         "text-500-80": "rgba(100, 116, 139, .8)",
         "link-500": "#0ea5e9",
+        "sky-blue":"#01aee8",
+        "success-50":"#f0fdf4",
         "active-border": "#01aee8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -123,6 +125,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-out",
         "collapsible-up": "collapsible-up 0.2s ease-out"
+      },
+      gridTemplateColumns: {
+
+        'cols-auto': 'repeat(auto-fit,minmax(0,1fr))',
       }
     }
   },

@@ -4,6 +4,7 @@ import { Input } from "../ui/input";
 import Image from "next/image";
 import SwiperSlider from "../swiper/swiper-slider";
 import { SlidePrevButton, SlideNextButton } from "../swiper/custom-navigation";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -117,7 +118,10 @@ const index = () => {
           </div>
 
           <div className="flex flex-col bg-primaryGradient flex-1 rounded-3xl">
-            <div className="flex justify-between bg-white p-6 rounded-t-3xl">
+            <Link
+              href={"/txs?tab=deposit"}
+              className="flex justify-between bg-white p-6 rounded-t-3xl"
+            >
               <p className="flex flex-col gap-4">
                 <span className="flex items-center">
                   Deposits
@@ -132,11 +136,14 @@ const index = () => {
                 width={50}
                 height={50}
               />
-            </div>
-            <div className="flex justify-between p-6 text-white">
+            </Link>
+            <Link
+              href={"/txs?tab=withdrawal"}
+              className="flex justify-between p-6 text-white"
+            >
               <p className="flex flex-col gap-4">
                 <span className="flex items-center">
-                  Witdrawals
+                  Withdrawals
                   <InfoIcon className="h-3 w-3 ml-2" />
                 </span>
 
@@ -148,7 +155,7 @@ const index = () => {
                 width={50}
                 height={50}
               />
-            </div>
+            </Link>
           </div>
         </div>
 
