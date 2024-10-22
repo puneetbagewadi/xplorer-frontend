@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TokenTransferRow from "./TokenTransferRow";
 import WalletRow from "./WalletRow";
 import Activity from "./Activity";
+import InternalTxn from "./InternalTxn";
 
 interface TabNames {
   tabNames: string[];
@@ -33,6 +34,9 @@ const HoldersTransfersTab = ({ tabNames }: TabNames) => {
         </TabsContent>
         <TabsContent value={tabNames[2]}>
           <TokenTransferRow />
+        </TabsContent>
+        <TabsContent value={tabNames[3]}>
+          <InternalTxn />
         </TabsContent>
       </Tabs>
     </>

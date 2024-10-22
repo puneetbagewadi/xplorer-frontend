@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -20,7 +21,9 @@ const config = {
     extend: {
       backgroundImage: {
         primaryGradient:
-          "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)"
+          "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
+        seaWater:
+          "url('https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/sea_water.svg')"
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
@@ -44,8 +47,8 @@ const config = {
         "text-500": "#64748b",
         "text-500-80": "rgba(100, 116, 139, .8)",
         "link-500": "#0ea5e9",
-        "sky-blue":"#01aee8",
-        "success-50":"#f0fdf4",
+        "sky-blue": "#01aee8",
+        "success-50": "#f0fdf4",
         "active-border": "#01aee8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -127,8 +130,7 @@ const config = {
         "collapsible-up": "collapsible-up 0.2s ease-out"
       },
       gridTemplateColumns: {
-
-        'cols-auto': 'repeat(auto-fit,minmax(0,1fr))',
+        "cols-auto": "repeat(auto-fit,minmax(0,1fr))"
       }
     }
   },
