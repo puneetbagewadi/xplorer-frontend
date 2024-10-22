@@ -265,7 +265,7 @@ export const columns: ColumnDef<TransactionsAll>[] = [
               height={14}
             />
             <Link
-              href={"/"}
+              href={`/tx/${row.getValue("address")}`}
               className="text-center font-semibold text-xs text-link-500 hover:underline"
             >
               {shortenAddress(row.getValue("address"))}
@@ -296,7 +296,7 @@ export const columns: ColumnDef<TransactionsAll>[] = [
       <div className="capitalize hidden md:block">
         <Badge>
           <Link
-            href={"/"}
+            href={`/block/${row.getValue("block")}`}
             className="text-center items-center  text-xs  hover:underline flex gap-2"
           >
             <BlockImage />
@@ -320,7 +320,10 @@ export const columns: ColumnDef<TransactionsAll>[] = [
               width={14}
               height={14}
             />
-            <Link href={"/"} className="text-center  text-xs  hover:underline">
+            <Link
+              href={`/address/${row.getValue("initiatedBy")}`}
+              className="text-center  text-xs  hover:underline"
+            >
               {shortenAddress(row.getValue("initiatedBy"))}
             </Link>
             <CopyToClipboard copyText={row.getValue("initiatedBy")} />
@@ -343,7 +346,10 @@ export const columns: ColumnDef<TransactionsAll>[] = [
             width={14}
             height={14}
           />
-          <Link href={"/"} className="text-center  hover:underline">
+          <Link
+            href={`/address/${row.getValue("interactedWith")}`}
+            className="text-center  hover:underline"
+          >
             {shortenAddress(row.getValue("interactedWith"))}
           </Link>
           <CopyToClipboard copyText={row.getValue("interactedWith")} />

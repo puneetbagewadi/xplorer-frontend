@@ -29,6 +29,7 @@ import Image from "next/image";
 import CopyToClipboard from "@/lib/helpers/CopyToClipboard";
 import ArrowRight from "@/assets/icons/arrow_right_grey.svg";
 import BlockImage from "@/assets/icons/block_cube.svg";
+import ExternalTxnIcon from "@/assets/icons/external_link_blue.svg";
 import { useMemo, useState } from "react";
 import TablePagination from "@/components/TablePagination";
 
@@ -162,7 +163,7 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
       <div className="capitalize ">
         <Badge>
           <Link
-            href={"/"}
+            href={`/block/${row.getValue("L1Block")}`}
             className="text-center items-center  text-xs  hover:underline flex gap-2"
           >
             <BlockImage />
@@ -186,7 +187,10 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
               width={14}
               height={14}
             />
-            <Link href={"/"} className="text-center  text-xs  hover:underline">
+            <Link
+              href={`/tx/${row.getValue("L2TxnHash")}`}
+              className="text-center  text-xs  hover:underline"
+            >
               {shortenAddress(row.getValue("L2TxnHash"))}
             </Link>
             <CopyToClipboard copyText={row.getValue("L2TxnHash")} />
@@ -209,7 +213,10 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
             width={14}
             height={14}
           />
-          <Link href={"/"} className="text-center  hover:underline">
+          <Link
+            href={`/tx/${row.getValue("L1TxnHash")}`}
+            className="text-center  text-xs hover:underline"
+          >
             {shortenAddress(row.getValue("L1TxnHash"))}
           </Link>
           <CopyToClipboard copyText={row.getValue("L1TxnHash")} />
@@ -222,16 +229,28 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     header: () => <div className="">L1 Txn origin</div>,
     cell: ({ row }) => (
       <div className="capitalize ">
-        <div className="flex gap-1.5">
+        <div className="flex gap-1.5 items-center">
           <Image
             src="/assets/icons/eth.svg"
             alt="icon"
             width={14}
             height={14}
           />
-          <Link href={"/"} className="text-center  hover:underline">
+          <Link
+            href={`/address/${row.getValue("L1TxnHashOrigin")}`}
+            className="text-center text-xs hover:underline"
+          >
             {shortenAddress(row.getValue("L1TxnHashOrigin"))}
           </Link>
+          <Link
+            href={`https://etherscan.io/address/${row.getValue(
+              "L1TxnHashOrigin"
+            )}`}
+            className="text-center  hover:underline"
+          >
+            <ExternalTxnIcon />
+          </Link>
+
           <CopyToClipboard copyText={row.getValue("L1TxnHashOrigin")} />
         </div>
       </div>

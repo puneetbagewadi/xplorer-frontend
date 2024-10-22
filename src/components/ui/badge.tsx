@@ -10,6 +10,8 @@ const badgeVariants = cva(
       variant: {
         default:
           "border-transparent bg-black text-white font-normal  px-2 py-1",
+          transparentSlate50:
+          "border-transparent bg-[#f4f7f91a] text-white font-normal  px-2 py-1 border border-[#4d535c]",
         secondary:
           "w-fit rounded-lg bg-grey-200 px-2 py-1 text-text-500 font-normal",
         destructive:

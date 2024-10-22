@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { M_PLUS_2 } from "next/font/google";
-import { ThemeProvider } from "@/providers/ThemeProvider";
 import { Web3Provider } from "@/providers/Web3Provider";
 import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 import { StoreProvider } from "@/providers/StoreProvider";
@@ -52,7 +51,7 @@ export default function RootLayout({
         <StoreProvider>
           <Web3Provider>
             {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
-              <AdminPanelLayout>{children}</AdminPanelLayout>
+            <AdminPanelLayout>{children}</AdminPanelLayout>
             {/* </ThemeProvider> */}
           </Web3Provider>
         </StoreProvider>

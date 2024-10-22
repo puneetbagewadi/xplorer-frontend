@@ -5,8 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { AllTransactions } from "./AllTransactions";
 import { DepositTxn } from "./DepositTxn";
 import { WithdrawalTransactions } from "./WithdrawalTransactions";
-import ArrowBack from "@/assets/icons/arrow_back.svg";
-import Link from "next/link";
+import PageNavigation from "@/components/PageNavigation";
 
 const TxPage = () => {
   const router = useRouter();
@@ -32,18 +31,10 @@ const TxPage = () => {
 
   return (
     <div className="w-full mx-auto">
-      <div className="flex gap-2">
-        <Link href={"/"}>
-          <ArrowBack />
-        </Link>
-
-        <h1 className="text-base font-bold text-gray-800 flex  mb-1  items-start   flex-col">
-          <span>Transactions</span>
-          <Link href={"/"} className=" font-normal block text-link-500 text-sm">
-            Home
-          </Link>
-        </h1>
-      </div>
+      <PageNavigation
+        title={"Transactions"}
+        navigationList={[{ name: "home", url: "/" }]}
+      />
 
       {/* Tabs Component */}
       <Tabs

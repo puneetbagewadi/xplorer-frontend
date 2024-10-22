@@ -159,7 +159,10 @@ export const columns: ColumnDef<WithdrawalProps>[] = [
       <div className="capitalize">
         <div className="flex justify-between items-center gap-4">
           <div className="flex gap-1.5">
-            <Link href={"/"} className="text-center  text-xs  hover:underline">
+            <Link
+              href={`/tx/${row.getValue("L2TxnHash")}`}
+              className="text-center  text-xs  hover:underline"
+            >
               {shortenAddress(row.getValue("L2TxnHash"))}
             </Link>
             <CopyToClipboard copyText={row.getValue("L2TxnHash")} />
@@ -180,7 +183,10 @@ export const columns: ColumnDef<WithdrawalProps>[] = [
             width={14}
             height={14}
           />
-          <Link href={"/"} className="text-center  hover:underline">
+          <Link
+            href={`/address/${row.getValue("from")}`}
+            className="text-center  hover:underline"
+          >
             {shortenAddress(row.getValue("from"))}
           </Link>
           <CopyToClipboard copyText={row.getValue("from")} />

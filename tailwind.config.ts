@@ -124,7 +124,7 @@ const config = {
       },
       gridTemplateColumns: {
 
-        'cols-auto': 'repeat(auto-fit,minmax(0,1fr))',
+        'auto': 'repeat(auto-fit,minmax(0,1fr))',
       }
     }
   },
