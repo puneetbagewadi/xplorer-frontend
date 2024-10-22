@@ -18,7 +18,7 @@ const CopyToClipboard = ({
       disabled={isCopied}
       className={cn(
         isCopied ? "text-success-600" : "",
-        "hover:no-underline",
+        "hover:no-underline align-text-top inline-flex",
         className
       )}
     >

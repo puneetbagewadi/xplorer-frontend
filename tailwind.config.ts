@@ -26,6 +26,9 @@ const config = {
         inter: ["var(--font-inter)"],
         m_plus_2: ["var(--font-m_plus_2)"]
       },
+      fontSize: {
+        16: "1rem"
+      },
       colors: {
         "body-ash": "#f4f7f9",
         "button-cta": "#1c1515",
@@ -39,6 +42,7 @@ const config = {
         "success-600": "#16a34a",
         "text-800": "#1e293b",
         "text-500": "#64748b",
+        "text-500-80": "rgba(100, 116, 139, .8)",
         "link-500": "#0ea5e9",
         "active-border": "#01aee8",
         border: "hsl(var(--border))",
