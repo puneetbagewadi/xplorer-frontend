@@ -354,7 +354,7 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     cell: ({ row }) => (
       <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
         <p className="paragraph2_regular text-grey-600 lg:hidden">
-          L1 Txn Hash
+        L1 Txn origin
         </p>{" "}
         <div className="flex gap-1.5 items-center">
           <Image
@@ -389,7 +389,7 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
     cell: ({ row }) => (
       <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
         <p className="paragraph2_regular text-grey-600 lg:hidden">
-          L1 Txn Hash
+        GasLimit
         </p>{" "}
         <p className="text-xs text-grey-500">{row.getValue("gasLimit")}</p>
       </div>
@@ -397,11 +397,11 @@ export const columns: ColumnDef<DepositTransactionTypes>[] = [
   },
   {
     accessorKey: "time",
-    header: () => <div className=" capitalize text-right">time</div>,
+    header: () => <div className=" capitalize ">time</div>,
     cell: ({ row }) => (
       <div className="col-span-12 grid grid-cols-txsMobTable lg:col-span-2 lg:block">
         <p className="paragraph2_regular text-grey-600 lg:hidden">
-          L1 Txn Hash
+        Time
         </p>{" "}
         {row.getValue("time")}
       </div>
