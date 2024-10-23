@@ -4,6 +4,7 @@ import { M_PLUS_2 } from "next/font/google";
 import { Web3Provider } from "@/providers/Web3Provider";
 import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 import { StoreProvider } from "@/providers/StoreProvider";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const m_plus_2 = M_PLUS_2({
   subsets: ["latin"],
@@ -51,7 +52,11 @@ export default function RootLayout({
         <StoreProvider>
           <Web3Provider>
             {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
-            <AdminPanelLayout>{children}</AdminPanelLayout>
+            <AdminPanelLayout>
+              <TooltipProvider delayDuration={300}>
+              {children}
+              </TooltipProvider>
+              </AdminPanelLayout>
             {/* </ThemeProvider> */}
           </Web3Provider>
         </StoreProvider>

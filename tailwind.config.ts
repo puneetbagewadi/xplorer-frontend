@@ -20,6 +20,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
+        blackGradient:"linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
         primaryGradient:
           "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
         seaWater:
