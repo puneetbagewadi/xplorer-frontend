@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/accordion";
 import { SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import UniqueAvatar from "@/components/unique-avatar";
+import CopyToClipboard from "@/lib/helpers/CopyToClipboard";
 
 const TransferRow = () => {
   return (
@@ -53,12 +55,9 @@ const createRow = () => {
             <div className="mb-2.5">
               <div className="relative flex items-center justify-evenly gap-10 lg:col-span-4">
                 <div className="mr-8 flex items-center gap-x-1 lg:mr-0">
-                  <Image
-                    alt="pic1"
-                    src="/assets/icons/pic1.svg"
-                    height={24}
-                    width={24}
-                    className="rounded-full"
+                  <UniqueAvatar
+                    text="0x3EF68D3f7664b2805D4E88381b64868a56f88bC4"
+                    size={24}
                   />
                   <div className="flex w-full items-center gap-2 text-center">
                     <a href="/address/0x3EF68D3f7664b2805D4E88381b64868a56f88bC4">
@@ -66,12 +65,8 @@ const createRow = () => {
                         0x3EF...8bC4
                       </p>
                     </a>
-                    <Image
-                      alt="copy"
-                      width="12"
-                      height="12"
-                      className="cursor-pointer "
-                      src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/copy_grey_filled.svg"
+                    <CopyToClipboard
+                      copyText={"0x3EF68D3f7664b2805D4E88381b64868a56f88bC4"}
                     />
                   </div>
                 </div>
@@ -83,12 +78,9 @@ const createRow = () => {
                   src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/arrow_right_grey.svg"
                 />
                 <div className="mr-8 flex items-center gap-x-1 lg:mr-0">
-                  <Image
-                    alt="pic2"
-                    src="/assets/icons/pic2.svg"
-                    height={24}
-                    width={24}
-                    className="rounded-full"
+                  <UniqueAvatar
+                    text="0x0000000000000000000000000000000000000000"
+                    size={24}
                   />
                   <div className="flex w-full items-center gap-2 text-center font-semibold text-xs">
                     <a href="/address/0x0000000000000000000000000000000000000000">

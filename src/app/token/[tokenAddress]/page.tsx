@@ -4,6 +4,7 @@ import Copy from "@/assets/icons/copy.svg";
 import Image from "next/image";
 import HoldersTransfersTab from "./HoldersTransfersTab";
 import CopyToClipboard from "@/lib/helpers/CopyToClipboard";
+import UniqueAvatar from "@/components/unique-avatar";
 
 const TokenPage = () => {
   return (
@@ -203,12 +204,8 @@ const TokenPage = () => {
               <div className="mb-9 last:mb-0">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-start gap-2 md:items-start">
-                    <Image
-                      src="/assets/icons/holder1.svg"
-                      alt="holder 1"
-                      width={40}
-                      height={40}
-                      className="rounded-full"
+                    <UniqueAvatar
+                      text={"0x63D83FBAE0EE891328ba7130A1920a46fe54007D"}
                     />
                     <div className="flex flex-col">
                       <p className="font-bold pb-1 text-grey-800">
@@ -248,12 +245,8 @@ const TokenPage = () => {
               <div className="mb-9 last:mb-0">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-start gap-2 md:items-start">
-                    <Image
-                      src="/assets/icons/holder2.svg"
-                      alt="holder 2"
-                      width={40}
-                      height={40}
-                      className="rounded-full"
+                    <UniqueAvatar
+                      text={"0x63D83FBAE0EE891328ba7130A1920a46fe54008D"}
                     />
                     <div className="flex flex-col">
                       <p className="font-bold pb-1 text-grey-800">
@@ -291,13 +284,7 @@ const TokenPage = () => {
               <div className="mb-9 last:mb-0">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center justify-start gap-2 md:items-start">
-                    <Image
-                      src="/assets/icons/holder3.svg"
-                      alt="holder 3"
-                      width={40}
-                      height={40}
-                      className="rounded-full"
-                    />
+                    <UniqueAvatar text="0x5aC1Da91Ec337a133C9E915ecE908e61dD1a2E04" />
                     <div className="flex flex-col">
                       <p className="font-bold pb-1 text-grey-800">
                         Itinerant #30658

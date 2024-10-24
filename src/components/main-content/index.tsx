@@ -6,7 +6,8 @@ import SwiperSlider from "../swiper/swiper-slider";
 import { SlidePrevButton, SlideNextButton } from "../swiper/custom-navigation";
 import Link from "next/link";
 
-const index = () => {
+const Index = () => {
+  // const avatar = generateAvatar(token, callback);
   return (
     <div className="grid auto-cols-fr grid-flow-row grid-cols-1 gap-8 pb-4 pt-20 lg:grid-cols-2 lg:pt-4">
       {/* left content */}
@@ -406,8 +407,8 @@ const index = () => {
                 {/* <svg>
                   <defs>
                     <linearGradient id="" gradientTransform="rotate(90)">
-                      <stop offset="0" stop-color="#01AEE8"></stop>
-                      <stop offset="1" stop-color="#7270F7"></stop>
+                      <stop offset="0" stopColor="#01AEE8"></stop>
+                      <stop offset="1" stopColor="#7270F7"></stop>
                     </linearGradient>
                   </defs>
                 </svg> */}
@@ -493,8 +494,8 @@ const index = () => {
                     y2="27.6824"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#01AEE8"></stop>
-                    <stop offset="1" stop-color="#7270F7"></stop>
+                    <stop stopColor="#01AEE8"></stop>
+                    <stop offset="1" stopColor="#7270F7"></stop>
                   </linearGradient>
                 </defs>
               </svg>
@@ -520,8 +521,8 @@ const index = () => {
                     y2="11.9064"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#01AEE8"></stop>
-                    <stop offset="1" stop-color="#7270F7"></stop>
+                    <stop stopColor="#01AEE8"></stop>
+                    <stop offset="1" stopColor="#7270F7"></stop>
                   </linearGradient>
                 </defs>
               </svg>
@@ -635,4 +636,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
