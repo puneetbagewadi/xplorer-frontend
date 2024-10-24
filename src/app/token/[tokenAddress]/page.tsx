@@ -1,16 +1,15 @@
-"use client";
-import React, { useState } from "react";
-import Copy from "@/assets/icons/copy.svg";
-import Image from "next/image";
-import HoldersTransfersTab from "./HoldersTransfersTab";
-import CopyToClipboard from "@/lib/helpers/CopyToClipboard";
-import UniqueAvatar from "@/components/unique-avatar";
+"use client"
+import React from "react"
+import Image from "next/image"
+import HoldersTransfersTab from "./HoldersTransfersTab"
+import CopyToClipboard from "@/lib/helpers/CopyToClipboard"
+import UniqueAvatar from "@/components/unique-avatar"
 
 const TokenPage = () => {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
       <div className="col-span-1 row-start-1 md:col-span-8">
-        <div className="relative w-full rounded-2xl px-6 py-2 md:p-6 h-auto bg-primaryGradient !p-0 !pb-4 lg:!p-6">
+        <div className="relative h-auto w-full rounded-2xl bg-primaryGradient !p-0 px-6 py-2 !pb-4 md:p-6 lg:!p-6">
           <div className="flex grid-cols-12 flex-col gap-3 md:grid md:gap-10">
             <div className="col-span-8">
               <div className="flex h-full w-full grid-cols-12 flex-col md:grid md:w-auto md:gap-5">
@@ -27,17 +26,17 @@ const TokenPage = () => {
                     <img
                       src="https://assets.coingecko.com/coins/images/32212/thumb/wETH_32.png?1696817415"
                       alt="WETH"
-                      className="absolute left-0 top-0 z-[0] w-full object-cover md:h-full blur-[28px]"
+                      className="absolute left-0 top-0 z-[0] w-full object-cover blur-[28px] md:h-full"
                     />
                   </div>
                 </div>
                 <div className="relative col-span-6 flex flex-col items-start px-6 pt-10 md:justify-between md:px-0 md:pt-0">
                   <div>
-                    <h3 className="font-bold mb-2 w-[65%] capitalize text-white md:w-auto text-2xl">
+                    <h3 className="mb-2 w-[65%] text-2xl font-bold capitalize text-white md:w-auto">
                       Wrapped Ether (WETH)
                     </h3>
                     <ul className="flex list-none items-center space-x-8 md:mb-16">
-                      <li className="relative text-white false">
+                      <li className="false relative text-white">
                         <p className="text-xs text-grey-300">ERC-20</p>
                       </li>
                       <li className="relative text-white before:absolute before:left-[-26px] before:top-1/2 before:mx-2 before:inline before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-grey-500 before:content-['']">
@@ -47,9 +46,9 @@ const TokenPage = () => {
                   </div>
                   <div>
                     <div className="mb-2.5 mr-[25%]   pb-5"></div>
-                    <p className="text-sm mb-1 text-grey-500">Contract:</p>
+                    <p className="mb-1 text-sm text-grey-500">Contract:</p>
                     <div className="flex items-center gap-2">
-                      <p className="font-semibold text-white text-xs gap-2">
+                      <p className="gap-2 text-xs font-semibold text-white">
                         <span className="mr-2">0x0Dc...1746</span>
                         <CopyToClipboard copyText={"address"} />
                       </p>
@@ -93,10 +92,10 @@ const TokenPage = () => {
                       </div>
                       <div
                         role="presentation"
-                        className="relative cursor-pointer rounded-lg p-2 h-9 w-9  bg-transparent-yellow500"
+                        className="relative h-9 w-9 cursor-pointer rounded-lg bg-transparent-yellow500  p-2"
                       >
                         <img
-                          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5"
+                          className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2"
                           src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/metamask.png"
                           alt="metamask"
                         />
@@ -148,10 +147,10 @@ const TokenPage = () => {
                   </div>
                   <div
                     role="presentation"
-                    className="relative h-9 w-9 cursor-pointer rounded-lg p-2 bg-transparent-yellow500"
+                    className="relative h-9 w-9 cursor-pointer rounded-lg bg-transparent-yellow500 p-2"
                   >
                     <img
-                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5"
+                      className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2"
                       src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/metamask.png"
                       alt="metamask"
                     />
@@ -160,31 +159,31 @@ const TokenPage = () => {
               </div>
               <ul className="flex w-full flex-col gap-1">
                 <li className="relative rounded-xl bg-neutral-50/5 px-[22px] py-3">
-                  <p className="text-xs mb-0.5 text-grey-500">Transfers</p>
-                  <p className="text-sm mb-0.5 text-grey-300">10,606,290</p>
+                  <p className="mb-0.5 text-xs text-grey-500">Transfers</p>
+                  <p className="mb-0.5 text-sm text-grey-300">10,606,290</p>
                   <img
                     src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/chains/manta/transfer.svg"
-                    className="top-1 absolute right-0 "
+                    className="absolute right-0 top-1 "
                     alt="Transfers"
                   />
                 </li>
                 <li className="relative rounded-xl bg-neutral-50/5 px-[22px] py-3">
-                  <p className="text-xs mb-0.5 text-grey-500">Holders</p>
-                  <p className="text-sm mb-0.5 text-grey-300">19,183</p>
+                  <p className="mb-0.5 text-xs text-grey-500">Holders</p>
+                  <p className="mb-0.5 text-sm text-grey-300">19,183</p>
                   <img
                     src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/chains/manta/holders.svg"
-                    className="top-2 absolute right-0 "
+                    className="absolute right-0 top-2 "
                     alt="Holders"
                   />
                 </li>
                 <li className="relative rounded-xl bg-neutral-50/5 px-[22px] py-3">
-                  <p className="text-xs mb-0.5 text-grey-500">
+                  <p className="mb-0.5 text-xs text-grey-500">
                     Max Total Supply
                   </p>
-                  <p className="text-sm mb-0.5 text-grey-300">1109.05 WETH</p>
+                  <p className="mb-0.5 text-sm text-grey-300">1109.05 WETH</p>
                   <img
                     src="https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/chains/manta/total_supply.svg"
-                    className="top-2 absolute right-0 "
+                    className="absolute right-0 top-2 "
                     alt="Max Total Supply"
                   />
                 </li>
@@ -198,7 +197,7 @@ const TokenPage = () => {
 
       <div className="col-span-1 row-span-2 md:col-span-4 md:row-start-1 md:row-end-7">
         <div className="grid auto-cols-fr grid-flow-row gap-2.5 md:mb-10">
-          <div className="relative w-full rounded-2xl md:p-6 bg-white px-4 py-6 shadow-md">
+          <div className="relative w-full rounded-2xl bg-white px-4 py-6 shadow-md md:p-6">
             <p className="text-xs text-grey-500">Who holds the most tokens?</p>
             <div className="mt-6">
               <div className="mb-9 last:mb-0">
@@ -208,11 +207,11 @@ const TokenPage = () => {
                       text={"0x63D83FBAE0EE891328ba7130A1920a46fe54007D"}
                     />
                     <div className="flex flex-col">
-                      <p className="font-bold pb-1 text-grey-800">
+                      <p className="pb-1 font-bold text-grey-800">
                         Excursionist #42333
                       </p>
-                      <p className="text-center text-xs break-words text-grey-500 flex gap-2">
-                        <span className="hover:underline cursor-pointer">
+                      <p className="flex gap-2 break-words text-center text-xs text-grey-500">
+                        <span className="cursor-pointer hover:underline">
                           {" "}
                           0x63D...007D
                         </span>
@@ -224,8 +223,8 @@ const TokenPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="relative flex gap-2 items-center">
-                    <p className="font-semibold text-grey-800 text-xs">
+                  <div className="relative flex items-center gap-2">
+                    <p className="text-xs font-semibold text-grey-800">
                       13.1 %
                     </p>
                     {/* <CircularProgressBar className="flex-1" /> */}
@@ -249,11 +248,11 @@ const TokenPage = () => {
                       text={"0x63D83FBAE0EE891328ba7130A1920a46fe54008D"}
                     />
                     <div className="flex flex-col">
-                      <p className="font-bold pb-1 text-grey-800">
+                      <p className="pb-1 font-bold text-grey-800">
                         Discoverer #16950
                       </p>
-                      <p className="text-center text-xs break-words text-grey-500 flex gap-2">
-                        <span className="hover:underline cursor-pointer">
+                      <p className="flex gap-2 break-words text-center text-xs text-grey-500">
+                        <span className="cursor-pointer hover:underline">
                           {" "}
                           0x63D...008D
                         </span>
@@ -265,8 +264,8 @@ const TokenPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="relative flex gap-2 items-center">
-                    <p className="font-semibold text-grey-800 text-xs">8.3 %</p>
+                  <div className="relative flex items-center gap-2">
+                    <p className="text-xs font-semibold text-grey-800">8.3 %</p>
                     {/* <CircularProgressBar className="flex-1" /> */}
                     <Image
                       src="/assets/icons/circularProgressBar.svg"
@@ -286,11 +285,11 @@ const TokenPage = () => {
                   <div className="flex items-center justify-start gap-2 md:items-start">
                     <UniqueAvatar text="0x5aC1Da91Ec337a133C9E915ecE908e61dD1a2E04" />
                     <div className="flex flex-col">
-                      <p className="font-bold pb-1 text-grey-800">
+                      <p className="pb-1 font-bold text-grey-800">
                         Itinerant #30658
                       </p>
-                      <p className="text-center text-xs break-words text-grey-500 flex gap-2">
-                        <span className="hover:underline cursor-pointer">
+                      <p className="flex gap-2 break-words text-center text-xs text-grey-500">
+                        <span className="cursor-pointer hover:underline">
                           {" "}
                           0x63D...009D
                         </span>
@@ -302,8 +301,8 @@ const TokenPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="relative flex gap-2 items-center">
-                    <p className="font-semibold text-grey-800 text-xs">5.5 %</p>
+                  <div className="relative flex items-center gap-2">
+                    <p className="text-xs font-semibold text-grey-800">5.5 %</p>
                     {/* <CircularProgressBar className="flex-1" /> */}
                     <Image
                       src="/assets/icons/circularProgressBar.svg"
@@ -324,7 +323,7 @@ const TokenPage = () => {
         <HoldersTransfersTab tabNames={["transfers", "holders", "contract"]} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TokenPage;
+export default TokenPage
