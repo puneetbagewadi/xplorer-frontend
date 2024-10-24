@@ -6,10 +6,12 @@ import { AllTransactions } from "./AllTransactions";
 import { DepositTxn } from "./DepositTxn";
 import { WithdrawalTransactions } from "./WithdrawalTransactions";
 import PageNavigation from "@/components/PageNavigation";
+// import { useGetLatestTransactionsQuery } from "@/lib/features/appApiSlice";
 
 const TxPage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
+  // const { data, error, isLoading } = useGetLatestTransactionsQuery();
 
   const tabFilters = [
     { id: 1, name: "All", value: "txs" },
@@ -19,6 +21,7 @@ const TxPage = () => {
   // Default tab from the query params or "deposit" if not present
   const currentTab = searchParams.get("tab") || "deposit";
 
+  
   const handleTabChange = (newTab: string) => {
     console.log("newTab", newTab);
 
