@@ -83,3 +83,8 @@
 .grid-cols-outputRootsMobTable, .grid-cols-txsMobTable {
   grid-template-columns: 160px auto;
 }
+.supportText_regular {
+  font-size: .75rem;
+  line-height: 1rem;
+  line-height: 1.4;
+}

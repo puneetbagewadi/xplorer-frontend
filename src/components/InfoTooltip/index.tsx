@@ -7,7 +7,7 @@ interface TooltipButton {
 const InfoTooltip = ({ message }: TooltipButton) => {
   return (
     <Tooltip>
-      <TooltipTrigger asChild>
+      <TooltipTrigger>
         <InfoHelpCircle />
       </TooltipTrigger>
       <TooltipContent>
