@@ -25,8 +25,13 @@ const CopyToClipboard = ({
     >
       <Copy className="w-4 h-4" />
       {isCopied && (
-        <div className=" absolute left-[-15px] top-[-30px]">
-          <Badge variant={"secondary"}>Copied!</Badge>
+        <div className=" absolute -left-[15px] -top-[30px]">
+          <Badge
+            variant={"secondary"}
+            className="text-success-600 bg-success-50"
+          >
+            Copied!
+          </Badge>
         </div>
       )}
     </button>

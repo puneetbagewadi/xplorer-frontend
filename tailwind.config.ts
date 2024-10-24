@@ -22,6 +22,10 @@ const config = {
       backgroundImage: {
         primaryGradient:
           "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
+        blackGradient: "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
+        blueGradient:
+          "linear-gradient(135deg,#01aee8 3.15%,#7270f7 97.74%)!important",
+        gradientText: "linear-gradient(90deg,#01aee8 20%,#7270f7)",
         seaWater:
           "url('https://ds-storage.sgp1.cdn.digitaloceanspaces.com/blio/assets/images/sea_water.svg')"
       },
@@ -130,7 +134,7 @@ const config = {
         "collapsible-up": "collapsible-up 0.2s ease-out"
       },
       gridTemplateColumns: {
-        'auto': 'repeat(auto-fit,minmax(0,1fr))',
+        auto: "repeat(auto-fit,minmax(0,1fr))"
       }
     }
   },
