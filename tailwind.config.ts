@@ -23,7 +23,6 @@ const config = {
         blackGradient:"linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
         primaryGradient:
           "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
-        blackGradient: "linear-gradient(132deg,#090606 36.57%,#0a242c 117.79%)",
         blueGradient:
           "linear-gradient(135deg,#01aee8 3.15%,#7270f7 97.74%)!important",
         gradientText: "linear-gradient(90deg,#01aee8 20%,#7270f7)",
